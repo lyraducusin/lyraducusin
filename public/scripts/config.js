@@ -3,11 +3,7 @@
   .module("myProfile")
   .config(function($routeProvider,$locationProvider){
     $routeProvider
-    .when('/home', {
-      controller: "homeCtrl",
-      templateUrl: "views/home.html"
-    })
-    .when('/about', {
+    .when('/', {
       controller: "aboutCtrl",
       templateUrl: "views/about.html"
     })
@@ -15,7 +11,11 @@
       controller: "contctCtrl",
       templateUrl: "views/contact.html"
     })
-    .otherwise({ redirectTo: '/home'});
+    .when('/portfolio', {
+      controller: "portfolioCtrl",
+      templateUrl: "views/portfolio.html"
+    })
+    .otherwise({ redirectTo: '/'});
     $locationProvider.hashPrefix('');
   });
 

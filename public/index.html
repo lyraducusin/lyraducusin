@@ -7,23 +7,35 @@
     <link href="css/animations.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
 
     <title>Lyra Ducusin - Web Developer</title>
   </head>
   <body>
 
-    <h1>Lyra Ducusin</h1>
+    <!--Nav bar-->
+    <h1><a href="/">Lyra Ducusin</a></h1>
     <h3>Front-End Web Developer</h3>
     <ul id="nav">
-        <li><a href="#/home">Home</a></li>
         <li><a href="#/about">About</a></li>
         <li><a href="#/portfolio">Portfolio</a></li>
-        <li><a href="#/contact">Contact</a></li>
+        <li><a href="#/contact">Contact Me</a></li>
     </ul>
     <div class="page {{ pageClass }}" ng-view>
 
     </div>
+
+    <!--footer-->
+
+    <footer>
+      <a href="https://www.linkedin.com/in/lyraducusin/" target="_blank"><i class="fa fa-linkedin-square fa-3x social"></i></a>
+      <a href="https://github.com/lyraducusin" target="_blank"><i class="fa fa-github-square fa-3x social"></i></a>
+      <a href="mailto:lyraducusin@gmail.com">Email Me | (586)229-9024</a>
+    </footer>
+
 
     <!-- <div id="banner">
       <img class="banner-image" src="images/topimage.jpeg"></img>
@@ -31,11 +43,12 @@
     </div> -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js"></script>
   <script src="scripts/module.js"></script>
   <script src="scripts/config.js"></script>
-  <script src="scripts/controllers/home.js"></script>
   <script src="scripts/controllers/about.js"></script>
   <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/portfolio.js"></script>
   </body>
 
 </html>
